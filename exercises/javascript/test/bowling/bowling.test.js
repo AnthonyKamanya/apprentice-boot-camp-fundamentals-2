@@ -1,6 +1,6 @@
 import { bowl } from "../../main/bowling/bowling";
 describe("Bowling tests", () => {
-  test("Rename me", () => {
+  test("should the score 0 when all frames is 0", () => {
     //arrange
     const rolls = [
       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -9,7 +9,7 @@ describe("Bowling tests", () => {
     expect(bowl(rolls)).toBe(0);
     //assert
   });
-  test("Rename me", () => {
+  test("should the score 20 when all frames is 1", () => {
     //arrange
     const rolls = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1];
     //act
