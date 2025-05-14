@@ -1,3 +1,7 @@
-export function bowl() {
-  return 0;
+export function bowl(array) {
+  let sumOfRolls = 0;
+  array.forEach((element) => {
+    sumOfRolls += element;
+  });
+  return sumOfRolls;
 }
