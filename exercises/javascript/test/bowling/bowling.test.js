@@ -16,4 +16,11 @@ describe("Bowling tests", () => {
     expect(bowl(rolls)).toBe(20);
     //assert
   });
+  test("should the score 12 when there is a spare", () => {
+    //arrange
+    const rolls = [1, 9, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+    //act
+    expect(bowl(rolls)).toBe(12);
+    //assert
+  });
 });
